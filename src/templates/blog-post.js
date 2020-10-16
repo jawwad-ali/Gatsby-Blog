@@ -11,6 +11,7 @@ export const query = graphql`
     query($slug:String!){
         contentfulBlogSite(slug: {eq: $slug}) {
             title
+            author
             date(fromNow: true)
             image {
                 fluid(maxWidth: 750){ 
@@ -40,7 +41,11 @@ const BlogPost = props => {
                 <h1 className={styles.blog_title}>{props.data.contentfulBlogSite.title}</h1>
 
                 <span>
-                    Posted: <strong>{props.data.contentfulBlogSite.date}</strong>
+                    <p className={styles.blog_date}>Posted: {props.data.contentfulBlogSite.date}</p>
+                </span>
+
+                <span>
+                    <p className={styles.blog_author}>Author: {props.data.contentfulBlogSite.author}</p>
                 </span>
 
                 <div className={styles.image_div}>

@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from "./blog.module.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Blog = () => {
   const data = useStaticQuery(
@@ -18,9 +19,9 @@ const Blog = () => {
             excerpt 
             slug
             image {
-                fluid(maxWidth: 350){ 
-                    ...GatsbyContentfulFluid
-                }
+              fluid(maxWidth: 350, maxHeight: 350){
+                ...GatsbyContentfulFluid
+              }
             }
           }
         }
@@ -33,35 +34,42 @@ const Blog = () => {
     <Layout>
       <div>
         <SEO title="Blog" />
-        <ul>
-          {data.allContentfulBlogSite.edges.map(edge => {
-            return (
-              <li className="post" key={edge.node.id}>
-                <h2>
-                  <Link to={`/blog/${edge.node.slug}/`}>{edge.node.title}</Link>
-                </h2>
-                <div>
-                  <span>Posted on {edge.node.createdAt}</span>
-                </div>
+        {data.allContentfulBlogSite.edges.map(edge => {
+          return (
+            <div className="container" style={{ position: "relative", top: "40px", }}>
+              <div className="row" style={{ marginBottom: "35px" }}>
+                <div className="col-lg-2 ">
 
-                <div className={styles.image_div}>
-                  <div className={styles.image}>
-                    {edge.node.image && (
-                      <Img
-                        className="featured"
-                        fluid={edge.node.image.fluid}
-                        alt={edge.node.title}
-                      />
-                    )}
+                  <div className={styles.image_div}>
+                    <div className={styles.image}>
+                      {edge.node.image && (
+                        <Img
+                          className="featured"
+                          fluid={edge.node.image.fluid}
+                          alt={edge.node.title}
+                        />
+                      )}
+                    </div>
+                  </div>
+
+                </div>
+                <div className="col-lg-8">
+                  <h2 className={styles.blog_title}>
+                    <Link to={`/blog/${edge.node.slug}/`}>{edge.node.title}</Link>
+                  </h2>
+                  <div>
+                    <span><p className={styles.blog_time}>Posted {edge.node.createdAt}</p></span>
+                  </div>
+                  <div>
+                    <p className={styles.blog_excerpt}>
+                      {edge.node.excerpt}
+                    </p>
                   </div>
                 </div>
-                <p>
-                  {edge.node.excerpt}
-                </p>
-              </li>
-            )
-          })}
-        </ul>
+              </div>
+            </div>
+          )
+        })}
       </div>
     </Layout>
 
