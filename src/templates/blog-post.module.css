@@ -1,0 +1,43 @@
+.blog_container {
+    width: 70%;
+    position: relative;
+    left: 13.5%;
+    top: 50px;
+    height: auto;
+    display: block !important;
+    border:1px solid green;
+    bottom:50px;
+}
+
+.blog_title {
+    font-size: 48px;
+    font-family: 'Yantramanav';
+    line-height: 60px;
+    color: rgba(41, 41, 41, 1);
+    font-weight: normal;
+}
+
+.desc {
+    top: 50px;
+    line-height: 35px;
+    font-family: 'Roboto';
+    position: relative;
+    top: 40px;
+}
+
+.btn_div {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
+
+.btn {
+    border: none;
+    color: white;
+    background-color: rebeccapurple;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 5%;
+    font-size: 12px;
+}
