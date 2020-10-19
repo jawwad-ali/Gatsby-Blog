@@ -15,18 +15,18 @@ export default function IndexPage() {
         <div className="container">
           <div className="row no-gutters">
             <div className="col-lg-6">
-              <div className={styles.header_body}>
+              <div className={styles.header_body}> 
                 <h2 className={styles.header_body_heading}>Blogging is my DNA</h2>
                 <p className={styles.header_body_text}>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
                   a type specimen book. It has survived not only five centuries
-                </p>
+                </p> 
                 <Link to={`/blog/`}>
                   <button className={styles.header_btn}>Start Reading</button>
                 </Link>
-              </div>
-            </div>
+              </div> 
+            </div> 
             <div className="col-lg-6" style={{ textAlign: "center" }}>
               <img className={styles.header_body_img} src="https://www.pngjoy.com/pngm/165/3294044_office-worker-guy-with-laptop-png-hd-png.png" alt="landing page" />
             </div>

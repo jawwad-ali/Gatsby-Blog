@@ -42,7 +42,7 @@ const BlogPost = props => {
 
                 <span>
                     <p className={styles.blog_date}>Posted: {props.data.contentfulBlogSite.date}</p>
-                </span>
+                </span> 
 
                 <span>
                     <p className={styles.blog_author}>Author: {props.data.contentfulBlogSite.author}</p>
@@ -55,7 +55,7 @@ const BlogPost = props => {
                                 className="featured"
                                 fluid={props.data.contentfulBlogSite.image.fluid}
                                 alt={props.data.contentfulBlogSite.title}
-                            />
+                            /> 
                         )}
                     </div>
                 </div>

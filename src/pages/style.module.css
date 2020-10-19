@@ -7,13 +7,11 @@
 .header_body_heading {
     text-align: left;
     font-family: 'Yantramanav';
-    font-weight: bold;
-    color: rebeccapurple;
+    color: rgb(41, 41, 41);
     font-size: 60px;
-    word-spacing: 5px;
+    word-spacing: 2px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
-    opacity: 0.8;
-    text-transform: uppercase;
+    letter-spacing: -2px;
 }
 
 .header_body_text {
@@ -40,4 +38,49 @@
 .header_body_img {
     height: 550px;
     /* border: 1px solid green; */
+}
+
+@media only screen and (max-width:600px) {
+
+    .header_body_heading {
+        font-size: 50px;
+    }
+
+    .header_body_img {
+        height: 350px;
+        position: absolute;
+        top: 160px;
+        left: 13px;
+    }
+
+    .header_btn {
+        padding: 12px 24px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .header_body_img {
+        position: absolute;
+        top: -265px;
+        height: 450px;
+        right: 150px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .header_body{
+        height: 50vh;
+    }
+    .header_body_img {
+      position: absolute;
+      top:0;
+      left:80px;
+
+    }
+}
+ 
+@media only screen and (min-width:1200px) {
+   .header_body_img{
+       height: 550px;
+   }
 }

@@ -38,21 +38,21 @@ const Blog = () => {
           return (
             <div className="container" style={{ position: "relative", top: "40px", }}>
               <div className="row" style={{ marginBottom: "35px" }}>
-                <div className="col-lg-2 ">
+                <div className="col-xs-12 col-sm-12 col-lg-2 ">
 
                   <div className={styles.image_div}>
                     <div className={styles.image}>
                       {edge.node.image && (
                         <Img
-                          className="featured"
+                          className="featured" 
                           fluid={edge.node.image.fluid}
-                          alt={edge.node.title}
+                          alt={edge.node.title} 
                         />
                       )}
                     </div>
                   </div>
-
-                </div>
+ 
+                </div> 
                 <div className="col-lg-8">
                   <h2 className={styles.blog_title}>
                     <Link to={`/blog/${edge.node.slug}/`}>{edge.node.title}</Link>
