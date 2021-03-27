@@ -14,7 +14,7 @@ function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
-        site {
+        site { 
           siteMetadata {
             title
             description

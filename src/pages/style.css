@@ -1,0 +1,49 @@
+.bgi {
+  background-image: url("../images//bg.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  overflow: hidden;
+}
+.home-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  height: 100vh;
+}
+h1 {
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 60px !important;
+}
+.nestedh1 {
+  font-size: 17px !important;
+  text-align: center;
+  line-height: 20px;
+}
+.text-div {
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.text {
+  color: #f7f7f7;
+  font-size: 14px;
+  text-align: center;
+}
+.btn-div {
+  margin-top: 10px;
+}
+.home-btn {
+  color: white !important;
+  background-color: transparent !important;
+  border: 1px solid lightgray !important;
+  text-transform: inherit !important;
+  outline: none !important;
+}

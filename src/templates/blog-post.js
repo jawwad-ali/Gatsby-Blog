@@ -12,7 +12,7 @@ export const query = graphql`
         contentfulBlogSite(slug: {eq: $slug}) {
             title
             author
-            date(fromNow: true)
+            date(fromNow: true) 
             image {
                 fluid(maxWidth: 750){ 
                     ...GatsbyContentfulFluid
@@ -27,23 +27,25 @@ export const query = graphql`
 
 const BlogPost = props => {
     return (
-        <Layout>
+        <>
             <SEO title={props.data.contentfulBlogSite.title} />
-            <div className={styles.btn_div}>
+            {/* <div className={styles.btn_div}>
                 <Link to="/blog/">
                     <button className={styles.btn}>
                         Go Back
                 </button>
                 </Link>
+            </div> */}
+            <div className="back">
+                <Link to="../">
+                    <ArrowBackIcon />
+                </Link>
             </div>
-
             <div className={styles.blog_container}>
                 <h1 className={styles.blog_title}>{props.data.contentfulBlogSite.title}</h1>
-
                 <span>
                     <p className={styles.blog_date}>Posted: {props.data.contentfulBlogSite.date}</p>
-                </span> 
-
+                </span>
                 <span>
                     <p className={styles.blog_author}>Author: {props.data.contentfulBlogSite.author}</p>
                 </span>
@@ -52,10 +54,9 @@ const BlogPost = props => {
                     <div className={styles.image}>
                         {props.data.contentfulBlogSite.image && (
                             <Img
-                                className="featured"
                                 fluid={props.data.contentfulBlogSite.image.fluid}
                                 alt={props.data.contentfulBlogSite.title}
-                            /> 
+                            />
                         )}
                     </div>
                 </div>
@@ -66,7 +67,7 @@ const BlogPost = props => {
                     </p>
                 </div>
             </div>
-        </Layout>
+        </>
     )
 }
 export default BlogPost

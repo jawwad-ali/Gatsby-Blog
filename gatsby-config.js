@@ -1,6 +1,6 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+}) 
 
 module.exports = {
   siteMetadata: {
@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
+    `gatsby-transformer-remark`, 
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -23,9 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Roboto`,
           'Yantramanav',
-          'Ribeye Marrow'
           // `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
         ],
         display: 'swap'
