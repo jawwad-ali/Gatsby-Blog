@@ -1,9 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styles from "./blog.module.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./blog.css"
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';

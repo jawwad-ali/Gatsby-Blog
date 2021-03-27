@@ -1,11 +1,9 @@
 .back {
   padding-left: 32px !important;
-  /* border: 1px solid red; */
 }
 .article-container {
   margin-right: 15px;
   margin-left: 15px;
-  /* border: 1px solid red; */
   margin-top: 15px;
 }
 .article {
@@ -22,7 +20,6 @@
 }
 .article-info {
   flex: 0.9;
-  /* border: 1px solid blue; */
   margin-left: 20px;
 }
 h3 {
