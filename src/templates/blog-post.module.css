@@ -51,7 +51,15 @@
   border-radius: 5%;
   font-size: 12px;
 }
-
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog_post_img {
+  height: 350px !important;
+  width: 500px !important;
+}
 @media only screen and (max-width: 600px) {
   .blog_title {
     font-size: 34px;

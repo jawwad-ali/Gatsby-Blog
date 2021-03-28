@@ -9,7 +9,7 @@ module.exports = {
     author: `Ali Jawwad`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet`, 
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-contentful`,
@@ -17,7 +17,6 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         forceFullSync: true,
-
       },
     },
     {

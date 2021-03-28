@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 import styles from "./blog-post.module.css"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 export const query = graphql`
     query($slug:String!){
@@ -28,13 +29,6 @@ const BlogPost = props => {
     return (
         <>
             <SEO title={props.data.contentfulBlogSite.title} />
-            {/* <div className={styles.btn_div}>
-                <Link to="/blog/">
-                    <button className={styles.btn}>
-                        Go Back
-                </button>
-                </Link>
-            </div> */}
             <div className="back">
                 <Link to="../">
                     <ArrowBackIcon />
@@ -55,6 +49,7 @@ const BlogPost = props => {
                             <Img
                                 fluid={props.data.contentfulBlogSite.image.fluid}
                                 alt={props.data.contentfulBlogSite.title}
+                                className={styles.blog_post_img}
                             />
                         )}
                     </div>
