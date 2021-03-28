@@ -37,3 +37,25 @@ a {
 .excerpt {
   font-size: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+  .article {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+  }
+  .featured {
+    width: 300px;
+  }
+  .article-info {
+    margin-left: 0px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  .excerpt {
+    font-size: 14px;
+    /* border:1px solid red; */
+    /* width: 260px; */
+  }
+}

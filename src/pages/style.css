@@ -7,11 +7,11 @@
   background-size: cover; /* Resize the background image to cover the entire container */
   overflow: hidden;
 }
-.home-body {
+.home-body { 
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   height: 100vh;
 }
@@ -45,4 +45,13 @@ h1 {
   border: 1px solid lightgray !important;
   text-transform: inherit !important;
   outline: none !important;
+}
+
+@media only screen and (max-width:600px){
+  h1{
+    text-align: center;
+  }
+  .nestedh1{
+    margin-top: 3px;
+  }
 }

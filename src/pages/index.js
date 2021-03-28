@@ -9,10 +9,10 @@ export default function IndexPage() {
   return (
     <>
       <SEO title="Home" />
-
-      <div className="container-fluid bgi ">
+ 
+      <div className="container-fluid bgi">
         <div className="row">
-          <div className="col-lg-12">
+          <div className="col-lg-12"> 
             <div className="home-body">
               <h1>over 10 years
                 <div className="nestedh1">of experience in industry</div>

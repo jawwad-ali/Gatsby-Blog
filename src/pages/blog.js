@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./blog.css"
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-
+ 
 const Blog = () => {
   const data = useStaticQuery(
     graphql`

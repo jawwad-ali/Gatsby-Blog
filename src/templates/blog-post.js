@@ -42,7 +42,7 @@ const BlogPost = props => {
                 <span>
                     <p className={styles.blog_author}>Author: {props.data.contentfulBlogSite.author}</p>
                 </span>
-
+ 
                 <div className={styles.image_div}>
                     <div className={styles.image}>
                         {props.data.contentfulBlogSite.image && (
