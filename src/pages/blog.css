@@ -40,7 +40,6 @@ a {
 
 @media only screen and (max-width: 600px) {
   .article {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
   }

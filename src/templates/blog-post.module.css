@@ -71,6 +71,10 @@
     right: 17px;
     width: 300px;
   }
+  .blog_post_img {
+    height: 200px !important;
+    width: 100% !important;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -85,10 +89,10 @@
   }
 
   .text {
-    /* font-family: 'Yantramanav'; */
     font-size: 18px;
     letter-spacing: 1px;
   }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -103,7 +107,6 @@
   }
 
   .text {
-    /* font-family: 'Yantramanav'; */
     font-size: 18px;
     letter-spacing: 1px;
   }
