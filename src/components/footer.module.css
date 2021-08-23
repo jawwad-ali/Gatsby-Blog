@@ -1,29 +1,7 @@
 .footer {
-    /* width: 100%;
-    background-color: rebeccapurple;
-    position: relative;
-    bottom:-50px; */
-    /* height:78px; */
-
-    /* width: 100%;
-    padding: 1px;
-    color: #eef1f6;
-    border-top: 4px solid #F36F25;
-    position: absolute;
-    bottom: 0;
-    background-color: rebeccapurple; */
-
-    /* display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: rebeccapurple;
-    
-    display: block; */
-
     position: relative;
     background-color: rebeccapurple;
     top:100px;
-
 }
 
 .text {
